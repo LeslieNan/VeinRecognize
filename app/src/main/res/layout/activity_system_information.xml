@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.example.yourstory.jxd1500.activity.SystemInformationActivity">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="34dp"
+        android:src="@mipmap/fanhui"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:text="系统信息"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_system_list1"
+        android:layout_width="940dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="230dp"
+        android:background="@drawable/item_show_bg"
+        android:gravity="center_vertical"
+        android:paddingStart="32dp"
+        android:text="设备名称"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_system_name"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="26dp"
+        android:background="@null"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="end"
+        android:textColor="@color/text_color_blue"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_system_list1"
+        app:layout_constraintEnd_toEndOf="@id/tv_system_list1"
+        app:layout_constraintTop_toTopOf="@id/tv_system_list1" />
+
+    <TextView
+        android:id="@+id/tv_system_list2"
+        android:layout_width="940dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/item_show_bg"
+        android:enabled="false"
+        android:gravity="center_vertical"
+        android:paddingStart="32dp"
+        android:text="设备型号"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_system_list1" />
+
+    <TextView
+        android:id="@+id/tv_system_model"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="26dp"
+        android:enabled="false"
+        android:textColor="@color/text_color_blue"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_system_list2"
+        app:layout_constraintEnd_toEndOf="@id/tv_system_list2"
+        app:layout_constraintTop_toTopOf="@id/tv_system_list2" />
+
+    <TextView
+        android:id="@+id/tv_system_list3"
+        android:layout_width="940dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/item_show_bg"
+        android:enabled="false"
+        android:gravity="center_vertical"
+        android:paddingStart="32dp"
+        android:text="固件版本"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_system_list2" />
+
+    <TextView
+        android:id="@+id/tv_system_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="26dp"
+        android:enabled="false"
+        android:textColor="@color/text_color_blue"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_system_list3"
+        app:layout_constraintEnd_toEndOf="@id/tv_system_list3"
+        app:layout_constraintTop_toTopOf="@id/tv_system_list3" />
+
+
+    <TextView
+        android:id="@+id/tv_system_list4"
+        android:layout_width="940dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/item_show_bg"
+        android:enabled="false"
+        android:gravity="center_vertical"
+        android:paddingStart="32dp"
+        android:text="序列号"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_system_list3" />
+
+    <TextView
+        android:id="@+id/tv_system_serial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="26dp"
+        android:enabled="false"
+        android:textColor="@color/text_color_blue"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_system_list4"
+        app:layout_constraintEnd_toEndOf="@id/tv_system_list4"
+        app:layout_constraintTop_toTopOf="@id/tv_system_list4" />
+
+    <TextView
+        android:id="@+id/tv_system_list5"
+        android:layout_width="940dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/item_show_bg"
+        android:enabled="false"
+        android:gravity="center_vertical"
+        android:paddingStart="32dp"
+        android:text="系统版本"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_system_list4" />
+
+    <TextView
+        android:id="@+id/tv_system_android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="26dp"
+        android:enabled="false"
+        android:textColor="@color/text_color_blue"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_system_list5"
+        app:layout_constraintEnd_toEndOf="@id/tv_system_list5"
+        app:layout_constraintTop_toTopOf="@id/tv_system_list5" />
+
+</android.support.constraint.ConstraintLayout>

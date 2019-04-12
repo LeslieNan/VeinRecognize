@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.example.yourstory.jxd1500.activity.PswSetActivity">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="34dp"
+        android:src="@mipmap/fanhui"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title_psw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:text="密码设置"
+        android:textSize="56sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rg_pswset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_psw">
+
+        <RadioButton
+            android:id="@+id/rb_pswset_lxlp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radiobtn_bg_register"
+            android:button="@null"
+            android:gravity="center"
+            android:text="灵犀令牌"
+            android:textSize="52sp"
+            android:textColor="@color/white"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_pswset_gdpsw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="76dp"
+            android:background="@drawable/radiobtn_bg_register"
+            android:button="@null"
+            android:gravity="center"
+            android:text="固定密码"
+            android:textColor="@color/white"
+            android:textSize="52sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_psw_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="87dp"
+        android:background="@mipmap/pswset_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rg_pswset"
+        android:text="修改信息"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:clickable="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/pswset_infoset"
+        app:layout_constraintBottom_toBottomOf="@id/tv_psw_info"
+        app:layout_constraintStart_toStartOf="@id/tv_psw_info"
+        app:layout_constraintTop_toTopOf="@id/tv_psw_info"
+        android:layout_marginStart="16dp"/>
+
+</android.support.constraint.ConstraintLayout>

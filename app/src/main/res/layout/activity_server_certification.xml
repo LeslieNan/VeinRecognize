@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.example.yourstory.jxd1500.activity.ServerSetActivity">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="34dp"
+        android:src="@mipmap/fanhui"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_certification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:text="认证服务器"
+        android:textSize="56sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_server_ip"
+        android:layout_width="813dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="86dp"
+        android:background="@drawable/rz_server_tv_bg"
+        android:gravity="center_vertical"
+        android:paddingStart="25dp"
+        android:text="IP"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_certification" />
+
+    <EditText
+        android:id="@+id/et_server_ip"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:background="@null"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_server_ip"
+        app:layout_constraintEnd_toEndOf="@id/tv_server_ip"
+        app:layout_constraintTop_toTopOf="@id/tv_server_ip" />
+
+    <TextView
+        android:id="@+id/tv_server_mask"
+        android:layout_width="813dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rz_server_tv_bg"
+        android:gravity="center_vertical"
+        android:paddingStart="25dp"
+        android:text="子网掩码"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_server_ip" />
+
+    <EditText
+        android:id="@+id/et_server_mask"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:background="@null"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_server_mask"
+        app:layout_constraintEnd_toEndOf="@id/tv_server_mask"
+        app:layout_constraintTop_toTopOf="@id/tv_server_mask" />
+
+    <TextView
+        android:id="@+id/tv_server_port"
+        android:layout_width="813dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rz_server_tv_bg"
+        android:gravity="center_vertical"
+        android:paddingStart="25dp"
+        android:text="端口"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_server_mask" />
+
+    <EditText
+        android:id="@+id/et_server_port"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:background="@null"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_server_port"
+        app:layout_constraintEnd_toEndOf="@id/tv_server_port"
+        app:layout_constraintTop_toTopOf="@id/tv_server_port" />
+</android.support.constraint.ConstraintLayout>

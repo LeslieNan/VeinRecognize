@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.example.yourstory.jxd1500.activity.UserManageActivity">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="34dp"
+        android:src="@mipmap/fanhui"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_user_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="174dp"
+        android:layout_marginTop="42dp"
+        android:background="@mipmap/user_search_etbg"
+        android:hint="输入ID搜索用户"
+        android:maxLines="1"
+        android:paddingStart="70dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:src="@mipmap/user_search"
+        app:layout_constraintBottom_toBottomOf="@id/et_user_search"
+        app:layout_constraintStart_toStartOf="@id/et_user_search"
+        app:layout_constraintTop_toTopOf="@id/et_user_search" />
+
+    <Button
+        android:id="@+id/btn_user_delete"
+        android:layout_width="127dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="200dp"
+        android:background="@drawable/btn_bg_ripple_white"
+        android:text="删除用户"
+        app:layout_constraintStart_toEndOf="@id/et_user_search"
+        app:layout_constraintTop_toTopOf="@id/et_user_search" />
+
+    <Button
+        android:id="@+id/btn_user_alter"
+        android:layout_width="127dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/btn_bg_ripple_normal"
+        android:text="修改用户"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@id/btn_user_delete"
+        app:layout_constraintTop_toTopOf="@id/et_user_search" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginStart="72dp"
+        android:background="@drawable/item_usermg_bar"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toTopOf="@id/rv_user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tv_item_id"
+            android:layout_width="220dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="145dp"
+            android:gravity="center"
+            android:text="ID"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:background="@mipmap/vertical_line" />
+
+        <TextView
+            android:id="@+id/tv_item_username"
+            android:layout_width="146dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="100dp"
+            android:gravity="center"
+            android:text="用户名"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:background="@mipmap/vertical_line" />
+
+        <TextView
+            android:id="@+id/tv_item_group"
+            android:layout_width="146dp"
+            android:layout_height="23dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginStart="100dp"
+            android:gravity="center"
+            android:text="所属分组"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_user"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="95dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_user_search" />
+
+    <TextView
+        android:id="@+id/tv_usermg_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>

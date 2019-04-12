@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.example.yourstory.jxd1500.MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/main_finger"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/main_line"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <ImageView
+        android:id="@+id/iv_main_wifi"
+        android:layout_width="36dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:src="@mipmap/main_wifi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_main_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="120dp"
+        android:text="20:15"
+        android:textSize="@dimen/main_title"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_main_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3月18日"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/tv_main_time"
+        app:layout_constraintStart_toStartOf="@id/tv_main_time"
+        app:layout_constraintTop_toBottomOf="@id/tv_main_time" />
+
+    <TextView
+        android:id="@+id/tv_main_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="指静脉认证系统"
+        android:textSize="@dimen/main_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_main_time"
+        app:layout_constraintTop_toTopOf="@id/tv_main_time" />
+
+    <TextView
+        android:id="@+id/tv_main_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_main_title"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="@id/tv_main_title"
+        android:layout_marginStart="50dp"
+        android:textSize="50sp"
+        android:textColor="@color/white"/>
+    <TextView
+        android:id="@+id/tv_main_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_main_name"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@id/tv_main_name"
+        android:textSize="50sp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/tv_main_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_main_number"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="@id/tv_main_title"
+        app:layout_constraintEnd_toEndOf="@id/tv_main_title"
+        android:textSize="50sp"
+        android:text="欢迎使用"
+        android:textColor="@color/white"/>
+    <ImageView
+        android:id="@+id/iv_main_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/main_circle"
+        app:layout_constraintStart_toStartOf="@id/tv_main_title"
+        app:layout_constraintEnd_toEndOf="@id/tv_main_title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+    <ImageView
+        android:id="@+id/iv_main_mima"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/main_mima"
+        app:layout_constraintStart_toStartOf="@id/iv_main_circle"
+        app:layout_constraintEnd_toEndOf="@id/iv_main_circle"
+        app:layout_constraintBottom_toBottomOf="@id/iv_main_circle"
+        android:layout_marginBottom="15dp"/>
+
+    <ImageView
+        android:id="@+id/iv_main_guanli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/main_guanliyuan2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="19dp"
+        android:layout_marginEnd="24dp"/>
+</android.support.constraint.ConstraintLayout>

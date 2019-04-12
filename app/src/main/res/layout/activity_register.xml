@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.example.yourstory.jxd1500.activity.RegisterActivity">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="34dp"
+        android:src="@mipmap/fanhui"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_register_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="86dp"
+        android:text="请填写基本信息"
+        android:textColor="@color/text_color_blue"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@id/cl_group"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_register_title">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="用户名"
+            android:textColor="@color/text_color_black"
+            android:textSize="@dimen/text_weight"
+            app:layout_constraintBottom_toTopOf="@id/et_register_username"
+            app:layout_constraintStart_toStartOf="@id/et_register_username" />
+
+        <EditText
+            android:id="@+id/et_register_username"
+            android:layout_width="343dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/btn_bg_white"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="ID"
+            android:textColor="@color/text_color_black"
+            android:textSize="@dimen/text_weight"
+            app:layout_constraintBottom_toTopOf="@id/et_register_id"
+            app:layout_constraintStart_toStartOf="@id/et_register_id" />
+
+        <EditText
+            android:id="@+id/et_register_id"
+            android:layout_width="343dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/btn_bg_white"
+            android:inputType="phone"
+            android:maxLength="6"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            app:layout_constraintStart_toEndOf="@id/et_register_username"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_warn_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="送傲娇阿达"
+            android:textColor="@color/warn_text"
+            android:textSize="15sp"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="@id/et_register_id"
+            app:layout_constraintTop_toBottomOf="@id/et_register_id" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="所属分组"
+            android:textColor="@color/text_color_black"
+            android:textSize="@dimen/text_weight"
+            app:layout_constraintBottom_toTopOf="@id/et_register_group"
+            app:layout_constraintStart_toStartOf="@id/et_register_group" />
+
+        <EditText
+            android:id="@+id/et_register_group"
+            android:layout_width="343dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="66dp"
+            android:background="@drawable/btn_bg_white"
+            android:inputType="phone"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_register_username"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="设置密码"
+            android:textColor="@color/text_color_black"
+            android:textSize="@dimen/text_weight"
+            app:layout_constraintBottom_toTopOf="@id/et_register_psw"
+            app:layout_constraintStart_toStartOf="@id/et_register_psw" />
+
+        <EditText
+            android:id="@+id/et_register_psw"
+            android:layout_width="343dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="66dp"
+            android:background="@drawable/btn_bg_white"
+            android:inputType="phone"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_register_group" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="确认密码"
+            android:textColor="@color/text_color_black"
+            android:textSize="@dimen/text_weight"
+            app:layout_constraintBottom_toTopOf="@id/et_register_agpsw"
+            app:layout_constraintStart_toStartOf="@id/et_register_agpsw" />
+
+        <EditText
+            android:id="@+id/et_register_agpsw"
+            android:layout_width="343dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_bg_white"
+            android:inputType="phone"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            app:layout_constraintStart_toStartOf="@id/et_register_id"
+            app:layout_constraintTop_toTopOf="@id/et_register_psw" />
+
+        <TextView
+            android:id="@+id/tv_warn_psw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="*两次密码不一致"
+            android:textColor="@color/warn_text"
+            android:textSize="15sp"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="@id/et_register_agpsw"
+            app:layout_constraintTop_toBottomOf="@id/et_register_agpsw" />
+
+        <ImageView
+            android:id="@+id/iv_register_yanid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:src="@mipmap/icon_true"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/et_register_id"
+            app:layout_constraintStart_toEndOf="@id/et_register_id"
+            app:layout_constraintTop_toTopOf="@id/et_register_id" />
+
+        <ImageView
+            android:id="@+id/iv_register_yanpsw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:src="@mipmap/icon_true"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/et_register_agpsw"
+            app:layout_constraintStart_toEndOf="@id/et_register_agpsw"
+            app:layout_constraintTop_toTopOf="@id/et_register_agpsw" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cl_group">
+
+        <TextView
+            android:id="@+id/tv_caijifinger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="采集指静脉"
+            android:textColor="@color/text_color_blue"
+            android:textSize="@dimen/text_weight"
+            app:layout_constraintBottom_toTopOf="@id/btn_register_caiji" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="采集人脸图像"
+            android:textColor="@color/text_color_blue"
+            android:textSize="@dimen/text_weight"
+            app:layout_constraintStart_toStartOf="@id/btn_register_caijiface"
+            app:layout_constraintTop_toTopOf="@id/tv_caijifinger" />
+
+        <Button
+            android:id="@+id/btn_register_caiji"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/btn_bg_ripple_normal"
+            android:text="开始采集"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/btn_register_finger1"
+            android:layout_width="116dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="40dp"
+            android:background="@drawable/btn_background_vein"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:text="指静脉 1"
+            android:textColor="@color/text_color_blue"
+            android:textSize="20sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/btn_register_caiji"
+            app:layout_constraintStart_toEndOf="@id/btn_register_caiji"
+            app:layout_constraintTop_toTopOf="@id/btn_register_caiji" />
+
+        <ImageView
+            android:id="@+id/iv_register_finger1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:src="@mipmap/icon_false"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/btn_register_finger1"
+            app:layout_constraintEnd_toEndOf="@id/btn_register_finger1"
+            app:layout_constraintTop_toTopOf="@id/btn_register_finger1" />
+
+        <TextView
+            android:id="@+id/btn_register_finger2"
+            android:layout_width="116dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="40dp"
+            android:background="@drawable/btn_background_vein"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:text="指静脉 2"
+            android:textColor="@color/text_color_blue"
+            android:textSize="20sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/btn_register_caiji"
+            app:layout_constraintStart_toEndOf="@id/btn_register_finger1"
+            app:layout_constraintTop_toTopOf="@id/btn_register_caiji" />
+
+        <ImageView
+            android:id="@+id/iv_register_finger2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:src="@mipmap/icon_false"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/btn_register_finger2"
+            app:layout_constraintEnd_toEndOf="@id/btn_register_finger2"
+            app:layout_constraintTop_toTopOf="@id/btn_register_finger2" />
+
+        <TextView
+            android:id="@+id/btn_register_finger3"
+            android:layout_width="116dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="40dp"
+            android:background="@drawable/btn_background_vein"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:text="指静脉 3"
+            android:textColor="@color/text_color_blue"
+            android:textSize="20sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/btn_register_caiji"
+            app:layout_constraintStart_toEndOf="@id/btn_register_finger2"
+            app:layout_constraintTop_toTopOf="@id/btn_register_caiji" />
+
+        <ImageView
+            android:id="@+id/iv_register_finger3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:src="@mipmap/icon_false"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/btn_register_finger3"
+            app:layout_constraintEnd_toEndOf="@id/btn_register_finger3"
+            app:layout_constraintTop_toTopOf="@id/btn_register_finger3" />
+
+        <Button
+            android:id="@+id/btn_register_caijiface"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="40dp"
+            android:background="@drawable/btn_bg_ripple_normal"
+            android:text="开始采集"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@id/iv_register_finger3"
+            app:layout_constraintTop_toTopOf="@id/btn_register_caiji" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="* 可最多添加三个指静脉"
+            app:layout_constraintTop_toBottomOf="@id/btn_register_caiji" />
+
+        <TextView
+            android:id="@+id/btn_register_face"
+            android:layout_width="116dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="40dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:text="人脸图像"
+            android:textColor="@color/text_color_blue"
+            android:textSize="20sp"
+            android:visibility="invisible"
+            app:layout_constraintStart_toEndOf="@id/btn_register_caijiface"
+            app:layout_constraintTop_toTopOf="@id/btn_register_finger1" />
+
+        <ImageView
+            android:id="@+id/iv_register_face"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:src="@mipmap/icon_false"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/btn_register_finger1"
+            app:layout_constraintEnd_toEndOf="@id/btn_register_face"
+            app:layout_constraintTop_toTopOf="@id/btn_register_finger1" />
+
+
+        <Button
+            android:id="@+id/btn_register_true"
+            android:layout_width="254dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/btn_bg_ripple_blue"
+            android:text="完成"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@id/btn_register_false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_register_caiji" />
+
+        <Button
+            android:id="@+id/btn_register_false"
+            android:layout_width="254dp"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_bg_ripple_white"
+            android:text="取消"
+            android:textColor="@color/text_color_blue"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btn_register_true"
+            app:layout_constraintTop_toTopOf="@id/btn_register_true" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

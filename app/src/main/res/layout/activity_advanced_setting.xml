@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.example.yourstory.jxd1500.activity.AdvancedSettingActivity">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="34dp"
+        android:src="@mipmap/fanhui"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="高级设置"
+        android:textSize="56sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_system_list1"
+        android:layout_width="940dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="340dp"
+        android:background="@drawable/item_show_bg"
+        android:gravity="center_vertical"
+        android:paddingStart="32dp"
+        android:text="锁屏时间"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rg_advance_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="240dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@id/tv_system_list1"
+        app:layout_constraintStart_toStartOf="@id/tv_system_list1"
+        app:layout_constraintTop_toTopOf="@id/tv_system_list1">
+
+        <RadioButton
+            android:id="@+id/rb_advance_30s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30s"
+            android:textSize="35sp" />
+
+        <RadioButton
+            android:id="@+id/rb_advance_1min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="69dp"
+            android:text="1min"
+            android:textSize="35sp" />
+
+        <RadioButton
+            android:id="@+id/rb_advance_3min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="69dp"
+            android:text="3min"
+            android:textSize="35sp" />
+
+        <RadioButton
+            android:id="@+id/rb_advance_5min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="69dp"
+            android:text="5min"
+            android:textSize="35sp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_system_list2"
+        android:layout_width="940dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/item_show_bg"
+        android:gravity="center_vertical"
+        android:paddingStart="32dp"
+        android:text="面部识别"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_system_list1" />
+
+    <Switch
+        android:id="@+id/sw_face"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="26dp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_system_list2"
+        app:layout_constraintEnd_toEndOf="@id/tv_system_list2"
+        app:layout_constraintTop_toTopOf="@id/tv_system_list2" />
+</android.support.constraint.ConstraintLayout>

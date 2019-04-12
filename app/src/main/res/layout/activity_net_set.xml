@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.example.yourstory.jxd1500.activity.NetSetActivity">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="34dp"
+        android:src="@mipmap/fanhui"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:text="网络设置"
+        android:textSize="56sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_timesetting_list1"
+        android:layout_width="940dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="230dp"
+        android:background="@drawable/item_show_bg"
+        android:gravity="center_vertical"
+        android:paddingStart="32dp"
+        android:text="DHCP"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/sw_dhcp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="26dp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_timesetting_list1"
+        app:layout_constraintEnd_toEndOf="@id/tv_timesetting_list1"
+        app:layout_constraintTop_toTopOf="@id/tv_timesetting_list1" />
+
+
+    <TextView
+        android:id="@+id/tv_timesetting_list2"
+        android:layout_width="940dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/item_show_bg"
+        android:gravity="center_vertical"
+        android:paddingStart="32dp"
+        android:text="IP"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_timesetting_list1" />
+
+    <EditText
+        android:id="@+id/et_local_ip"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="26dp"
+        android:background="@null"
+        android:clickable="true"
+        android:focusable="true"
+        android:textColor="@color/text_color_blue"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_timesetting_list2"
+        app:layout_constraintEnd_toEndOf="@id/tv_timesetting_list2"
+        app:layout_constraintTop_toTopOf="@id/tv_timesetting_list2" />
+
+    <TextView
+        android:id="@+id/tv_timesetting_list3"
+        android:layout_width="940dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/item_show_bg"
+        android:gravity="center_vertical"
+        android:paddingStart="32dp"
+        android:text="子网掩码"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_timesetting_list2" />
+
+    <EditText
+        android:id="@+id/et_local_yanma"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="26dp"
+        android:background="@null"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_timesetting_list3"
+        app:layout_constraintEnd_toEndOf="@id/tv_timesetting_list3"
+        app:layout_constraintTop_toTopOf="@id/tv_timesetting_list3" />
+
+    <TextView
+        android:id="@+id/tv_timesetting_list4"
+        android:layout_width="940dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/item_show_bg"
+        android:gravity="center_vertical"
+        android:paddingStart="32dp"
+        android:text="默认网关"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_timesetting_list3" />
+
+    <EditText
+        android:id="@+id/et_local_wangguan"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="26dp"
+        android:background="@null"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_timesetting_list4"
+        app:layout_constraintEnd_toEndOf="@id/tv_timesetting_list4"
+        app:layout_constraintTop_toTopOf="@id/tv_timesetting_list4" />
+
+
+</android.support.constraint.ConstraintLayout>

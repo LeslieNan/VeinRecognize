@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/num1"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:src="@mipmap/num1"
+        app:layout_constraintBottom_toTopOf="@id/num4"
+        app:layout_constraintEnd_toStartOf="@id/num2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/num2"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:src="@mipmap/num2"
+        app:layout_constraintBottom_toTopOf="@id/num5"
+        app:layout_constraintEnd_toStartOf="@id/num3"
+        app:layout_constraintStart_toEndOf="@id/num1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/num3"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:src="@mipmap/num3"
+        app:layout_constraintBottom_toTopOf="@id/num6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/num2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/num4"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:src="@mipmap/num4"
+        app:layout_constraintBottom_toTopOf="@id/num7"
+        app:layout_constraintEnd_toStartOf="@id/num5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num1" />
+
+    <ImageView
+        android:id="@+id/num5"
+        android:layout_width="85dp"
+        android:layout_height="84dp"
+        android:src="@mipmap/num5"
+        app:layout_constraintBottom_toTopOf="@id/num8"
+        app:layout_constraintEnd_toStartOf="@id/num6"
+        app:layout_constraintStart_toEndOf="@+id/num4"
+        app:layout_constraintTop_toBottomOf="@+id/num2" />
+
+    <ImageView
+        android:id="@+id/num6"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:src="@mipmap/num6"
+        app:layout_constraintBottom_toTopOf="@id/num9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/num5"
+        app:layout_constraintTop_toBottomOf="@+id/num3" />
+
+    <ImageView
+        android:id="@+id/num7"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:src="@mipmap/num7"
+        app:layout_constraintBottom_toTopOf="@id/num10"
+        app:layout_constraintEnd_toStartOf="@id/num8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/num4" />
+
+    <ImageView
+        android:id="@+id/num8"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:src="@mipmap/num8"
+        app:layout_constraintBottom_toTopOf="@id/num11"
+        app:layout_constraintEnd_toStartOf="@id/num9"
+        app:layout_constraintStart_toEndOf="@id/num7"
+        app:layout_constraintTop_toBottomOf="@id/num5" />
+
+    <ImageView
+        android:id="@+id/num9"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:src="@mipmap/num9"
+        app:layout_constraintBottom_toTopOf="@id/num12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/num8"
+        app:layout_constraintTop_toBottomOf="@id/num6" />
+
+    <ImageView
+        android:id="@+id/num10"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:src="@mipmap/num_re"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/num11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/num7" />
+
+    <ImageView
+        android:id="@+id/num11"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:src="@mipmap/num0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/num12"
+        app:layout_constraintStart_toEndOf="@id/num10"
+        app:layout_constraintTop_toBottomOf="@id/num8" />
+
+    <ImageView
+        android:id="@+id/num12"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:src="@mipmap/num_ok"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/num11"
+        app:layout_constraintTop_toBottomOf="@id/num9" />
+
+
+</android.support.constraint.ConstraintLayout>

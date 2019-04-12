@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+    <color name="background">#9CCDEA</color>
+    <color name="text_color_blue">#1695F4</color>
+    <color name="text_color_black">#6E6E6E</color>
+    <color name="btn_background">#EBEBEB</color>
+    <color name="warn_text">#F1161C</color>
+    <color name="usermg_rv_bg">#B5D8F7</color>
+</resources>

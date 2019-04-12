@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/text_color_blue"
+        android:gravity="center"
+        android:text="注册指静脉"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_weight" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:src="@mipmap/dialog_logo" />
+
+    <TextView
+        android:id="@+id/tv_dialog_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="请放入手指"
+        android:textColor="@color/text_color_blue"
+        android:textSize="@dimen/text_weight" />
+
+    <Button
+        android:id="@+id/btn_dialog_cancle"
+        android:layout_width="140dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_bg_ripple_normal"
+        android:text="取消"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_weight" />
+
+</LinearLayout>
