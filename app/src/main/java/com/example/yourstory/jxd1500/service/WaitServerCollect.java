@@ -9,6 +9,7 @@ import android.util.Log;
 import com.example.yourstory.jxd1500.bean.SignBean;
 import com.example.yourstory.jxd1500.bean.UserBean;
 import com.example.yourstory.jxd1500.bean.VeinBean;
+import com.example.yourstory.jxd1500.db.ImgDao;
 import com.example.yourstory.jxd1500.db.SignDao;
 import com.example.yourstory.jxd1500.db.UserDao;
 import com.example.yourstory.jxd1500.db.VeinDBDao;
@@ -108,6 +109,7 @@ public class WaitServerCollect extends IntentService {
         return Integer.parseInt(String.valueOf(clientStr.charAt(5)));
     }
 
+    //提取字符串中的body内容
     private String parseClientBody(String clientStr) {
         if (clientStr.length() > 12) {
             return clientStr.substring(12);
@@ -153,7 +155,8 @@ public class WaitServerCollect extends IntentService {
         Gson gson=new Gson();
         List<String> urls=gson.fromJson(imgUrlJson,new TypeToken<List<String>>(){}.getType());
         //存入数据库
-
+        ImgDao imgDao=new ImgDao(this);
+        imgDao.insertUrl(urls);
         return String.valueOf(1);
     }
 }

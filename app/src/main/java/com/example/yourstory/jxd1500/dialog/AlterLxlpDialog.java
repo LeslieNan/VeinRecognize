@@ -11,7 +11,9 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
+import com.example.yourstory.jxd1500.MyApplication;
 import com.example.yourstory.jxd1500.R;
 import com.example.yourstory.jxd1500.totp.PasscodeGenerator;
 
@@ -70,6 +72,12 @@ public class AlterLxlpDialog extends Dialog {
     @OnClick(R.id.btn_alterpsw)
     public void onViewClicked() {
         String key = etAlterpsw.getText().toString();
-        PasscodeGenerator.setAuthKey(key);
+        if (key.length() == 6) {
+            PasscodeGenerator.setAuthKey(key);
+            Toast.makeText(MyApplication.getInstance(), "修改成功", Toast.LENGTH_SHORT).show();
+            this.cancel();
+        } else {
+            Toast.makeText(MyApplication.getInstance(), "请确认密钥格式", Toast.LENGTH_SHORT).show();
+        }
     }
 }

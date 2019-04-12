@@ -11,7 +11,9 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
+import com.example.yourstory.jxd1500.MyApplication;
 import com.example.yourstory.jxd1500.R;
 import com.example.yourstory.jxd1500.util.SystemSettingUtil;
 
@@ -72,6 +74,14 @@ public class AlterPswDialog extends Dialog {
     @OnClick(R.id.btn_alterpsw)
     public void onViewClicked() {
         String key = etAlterpsw.getText().toString();
-        SystemSettingUtil.setPswKey(key);
+        String agKey=etAgalterpsw.getText().toString();
+        if (key.equals(agKey)){
+            SystemSettingUtil.setPswKey(key);
+            Toast.makeText(MyApplication.getInstance(), "修改成功", Toast.LENGTH_SHORT).show();
+            this.cancel();
+        }else {
+            Toast.makeText(MyApplication.getInstance(), "两次密码不一致", Toast.LENGTH_SHORT).show();
+        }
+
     }
 }
